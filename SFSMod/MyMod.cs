@@ -15,19 +15,19 @@ namespace SFSMod
         public static MyMod Main;
 
         // this ModNameID can be whatever you want
-        public override string ModNameID => "ModCode";
+        public override string ModNameID => "mStats";
 
-        public override string DisplayName => "My Mod";
+        public override string DisplayName => "mStats";
 
-        public override string Author => "105Code";
+        public override string Author => "0xnim";
 
-        public override string MinimumGameVersionNecessary => "0.3.7";
+        public override string MinimumGameVersionNecessary => "1.5.10";
 
         // I recommend use MAJOR.MINOR.PATCH Semantic versioning. 
         // Reference link: https://semver.org/ 
-        public override string ModVersion => "1.0.0";
+        public override string ModVersion => "0.1.0";
 
-        public override string Description => "Mod skeleton";
+        public override string Description => "This mod collects info about what mods are popular.";
 
         // With this variable you can define if your mods needs the others mods to work
         public override Dictionary<string, string> Dependencies
@@ -41,7 +41,7 @@ namespace SFSMod
         // Here you can specify which mods and version you need
         private Dictionary<string, string> _dependencies = new Dictionary<string, string>() {};
 
-
+        
         public override void Early_Load()
         {
             // This is for a singleton pattern. you can see more about singleton here https://www.c-sharpcorner.com/UploadFile/8911c4/singleton-design-pattern-in-C-Sharp/
@@ -57,10 +57,6 @@ namespace SFSMod
             // This function finds all the patches you have created and runs them
             harmony.PatchAll();
 
-            // you can subscribe to scene changes
-            SceneHelper.OnWorldSceneLoaded += this.OnWorld;
-            SceneHelper.OnBuildSceneLoaded += this.OnBuild;
-
         }
 
         public override void Load()
@@ -68,21 +64,8 @@ namespace SFSMod
             Debug.Log("Running Load code");
 
             // init your keybindings
-            Settings.Setup();
+            Stats.Setup();
 
         }
-
-        // When the world scene is loaded
-        private void OnWorld()
-        {
-            Debug.Log("On World");
-        }
-
-        // When the Build scene is loaded
-        private void OnBuild()
-        {
-            Debug.Log("On Build");
-        }
-
     }
 }
