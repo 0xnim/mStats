@@ -4,7 +4,7 @@ using ModLoader.Helpers;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SFSMod
+namespace mStats
 {
     /**
      * You only need to implement the Mod class once in your mod. The Mod class is how 

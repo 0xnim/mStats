@@ -8,8 +8,8 @@
     <ProjectGuid>{291E799C-F2DF-49AB-8A54-C33074CC7BE0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SFSMod</RootNamespace>
-    <AssemblyName>SFSMod</AssemblyName>
+    <RootNamespace>mStats</RootNamespace>
+    <AssemblyName>mStats</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,22 +42,22 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\SFSModInstaller\References\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Coffee.SoftMaskForUGUI">
-      <HintPath>..\..\SFSModInstaller\References\Coffee.SoftMaskForUGUI.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\Coffee.SoftMaskForUGUI.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\..\SFSModInstaller\References\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Posix">
-      <HintPath>..\..\SFSModInstaller\References\Mono.Posix.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\Mono.Posix.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Security">
-      <HintPath>..\..\SFSModInstaller\References\Mono.Security.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Mono.WebBrowser">
-      <HintPath>..\..\SFSModInstaller\References\Mono.WebBrowser.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\Mono.WebBrowser.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -73,8 +73,77 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UniTask">
-      <HintPath>..\Dependencies\UniTask.dll</HintPath>
+      <HintPath>..\..\SFSModInstaller\References\UniTask.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="UniTask.DOTween">
+      <HintPath>..\..\SFSModInstaller\References\UniTask.DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Linq">
+      <HintPath>..\..\SFSModInstaller\References\UniTask.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.TextMeshPro">
+      <HintPath>..\..\SFSModInstaller\References\UniTask.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RemoteConfig.Editor.Core">
+      <HintPath>..\..\SFSModInstaller\References\Unity.RemoteConfig.Editor.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Analytics">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Authentication">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Configuration">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Device">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Device.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments.Internal">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Environments.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Internal">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Networking">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Registration">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Scheduler">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Telemetry">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Threading">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.Core.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.RemoteConfig">
+      <HintPath>..\..\SFSModInstaller\References\Unity.Services.RemoteConfig.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
       <HintPath>..\..\SFSModInstaller\References\Unity.Tasks.dll</HintPath>
@@ -123,152 +192,158 @@
       <HintPath>..\..\SFSModInstaller\References\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\SFSModInstaller\References\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\SFSModInstaller\References\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.DSPGraphModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GIModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.GIModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.GIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.GridModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.LocalizationModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.NVIDIAModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.NVIDIAModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.NVIDIAModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.ProfilerModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.ProfilerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.AppleCore">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.AppleCore.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.AppleCore.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.AppleMacosStub">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.AppleMacosStub.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.AppleMacosStub.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.AppleStub">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.AppleStub.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.AppleStub.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.Codeless">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.Codeless.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.Codeless.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.SecurityCore">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.SecurityStub">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.Stores">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.Stores.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.Stores.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.WinRTCore">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.WinRTCore.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.WinRTCore.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.WinRTStub">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.Purchasing.WinRTStub.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.Purchasing.WinRTStub.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.StreamingModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.SubstanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.SubsystemsModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreFontEngineModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreTextEngineModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.UIElementsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIElementsNativeModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.UIElementsNativeModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.UIElementsNativeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.UIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>..\..\SFSModInstaller\References\UnityEngine.UNETModule.dll</HintPath>
+      <HintPath>..\..\mStatsInstaller\References\UnityEngine.UNETModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

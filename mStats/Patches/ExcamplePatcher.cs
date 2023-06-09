@@ -2,7 +2,7 @@
 using SFS.Builds;
 using UnityEngine;
 
-namespace SFSMod.Patches
+namespace mStats.Patches
 {
 
     /**

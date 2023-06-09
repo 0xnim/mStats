@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("SFSMod")]
-[assembly: AssemblyDescription("Mod skeleton")]
+[assembly: AssemblyTitle("mStats")]
+[assembly: AssemblyDescription("Mod to collect stats about what mods are popular.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("105Code")]
-[assembly: AssemblyProduct("SFSMod")]
-[assembly: AssemblyCopyright("Copyright ©  2022")]
+[assembly: AssemblyCompany("0xNim")]
+[assembly: AssemblyProduct("mStats")]
+[assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

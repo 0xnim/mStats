@@ -6,12 +6,15 @@ using ModLoader;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace SFSMod
+namespace mStats
 {
     public class ModList
     {
         [JsonProperty("mods")]
-        public List<string> Mods { get; set; }
+        public List<string> AllMods { get; set; }
+
+        [JsonProperty("enabled")]
+        public List<string> EnabledMods { get; set; }
     }
 
     public class Stats
@@ -20,9 +23,13 @@ namespace SFSMod
 
         public static async void Setup()
         {
+            var allMods = Loader.main.GetAllMods().Select(mod => mod.ModNameID).ToList();
+            var enabledMods = Loader.main.GetLoadedMods().Select(mod => mod.ModNameID).ToList();
+
             var modList = new ModList
             {
-                Mods = Loader.main.GetAllMods().Select(mod => mod.ModNameID).ToList()
+                AllMods = allMods,
+                EnabledMods = enabledMods
             };
 
             var json = JsonConvert.SerializeObject(modList);
